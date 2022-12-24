@@ -1,0 +1,26 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   scope: 'admin',
+0 silly argv   stream: true,
+0 silly argv   lernaVersion: '6.1.0',
+0 silly argv   '$0': '/Users/blackfox/Documents/Project/lerna-next-basecode/node_modules/.bin/lerna',
+0 silly argv   script: 'dev'
+0 silly argv }
+1 notice cli v6.1.0
+2 verbose rootPath /Users/blackfox/Documents/Project/lerna-next-basecode
+3 notice filter including "admin"
+4 info filter [ 'admin' ]
+5 error 
+ There was a critical error when configuring the task runner, please report this on https://github.com/lerna/lerna
+6 error Error: Cannot find module 'nx/src/utils/output'
+6 error Require stack:
+6 error - /Users/blackfox/Documents/Project/lerna-next-basecode/node_modules/@lerna/run/index.js
+6 error - /Users/blackfox/Documents/Project/lerna-next-basecode/node_modules/@lerna/run/command.js
+6 error - /Users/blackfox/Documents/Project/lerna-next-basecode/node_modules/lerna/index.js
+6 error - /Users/blackfox/Documents/Project/lerna-next-basecode/node_modules/lerna/cli.js
+6 error     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+6 error     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+6 error     at Module.require (node:internal/modules/cjs/loader:1005:19)
+6 error     at require (node:internal/modules/cjs/helpers:102:18)
+6 error     at RunCommand.configureNxOutput (/Users/blackfox/Documents/Project/lerna-next-basecode/node_modules/@lerna/run/index.js:354:24)
+6 error     at RunCommand.runScriptsUsingNx (/Users/blackfox/Documents/Project/lerna-next-basecode/node_modules/@lerna/run/index.js:201:10)

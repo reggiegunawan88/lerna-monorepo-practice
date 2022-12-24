@@ -1,0 +1,31 @@
+{
+  "name": "lerna-next-basecode",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "npm install; lerna bootstrap;",
+    "package:admin": "lerna run --scope admin --stream dev",
+    "package:users": "lerna run --scope users --stream dev",
+    "start": "run-p --print-label package:*",
+    "build": "lerna run --parallel build"
+  },
+  "devDependencies": {
+    "@types/node": "^14.18.35",
+    "lerna": "^6.1.0",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "@types/next": "^9.0.0",
+    "@types/react": "^16.14.34",
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^9.5.5",
+    "next-transpile-modules": "^10.0.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
